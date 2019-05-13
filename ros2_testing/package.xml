@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format2.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="2">
+  <name>ros2_testing</name>
+  <version>0.7.1</version>
+  <description>The entry point package to launch testing in ROS2.</description>
+  <maintainer email="michel@ekumenlabs.com">Michel Hidalgo</maintainer>
+  <license>Apache License 2.0</license>
+
+  <author email="michel@ekumenlabs.com">Michel Hidalgo</author>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <build_depend>ament_cmake_core</build_depend>
+  <build_depend>ament_cmake_export_dependencies</build_depend>
+
+  <build_export_depend>launch_testing_ament_cmake</build_export_depend>
+
+  <exec_depend>launch_testing</exec_depend>
+  <exec_depend>launch_testing_ros</exec_depend>
+  <exec_depend>ros2test</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
