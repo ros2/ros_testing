@@ -16,6 +16,8 @@
   <build_depend>ament_cmake_core</build_depend>
   <build_depend>ament_cmake_export_dependencies</build_depend>
 
+  <build_export_depend>launch_testing</build_export_depend>
+  <build_export_depend>launch_testing_ros</build_export_depend>
   <build_export_depend>launch_testing_ament_cmake</build_export_depend>
 
   <exec_depend>launch_testing</exec_depend>

@@ -14,4 +14,4 @@
 
 find_package(launch_testing_ament_cmake REQUIRED)
 
-include("${ros2_testing_DIR}/add_ros_test.cmake")
+include("${ros_testing_DIR}/add_ros_test.cmake")

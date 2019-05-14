@@ -59,7 +59,7 @@
 # :param ARGS: Launch arguments to pass to the ROS launch test
 # :type ARGS: string
 function(add_ros_test filename)
-  parse_launch_test_arguments(_ros_test filename ${ARGN})
+  parse_launch_test_arguments(_ros_test ${filename} ${ARGN})
 
   set(cmd
     "ros2"
