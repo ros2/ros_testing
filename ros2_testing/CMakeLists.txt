@@ -10,4 +10,11 @@ ament_export_dependencies(
   "launch_testing_ros"
 )
 
-ament_package()
+ament_package(
+  CONFIG_EXTRAS "${PROJECT_NAME}-extras.cmake"
+)
+
+install(
+  DIRECTORY cmake
+  DESTINATION share/${PROJECT_NAME}
+)
