@@ -27,7 +27,7 @@ This package provides the test command for ROS 2 launch tests.""",
     tests_require=['pytest'],
     entry_points={
         'ros2cli.command': [
-            'launch = ros2test.command.test:TestCommand',
+            'test = ros2test.command.test:TestCommand',
         ],
     }
 )

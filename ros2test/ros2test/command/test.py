@@ -19,7 +19,7 @@ from ros2cli.command import CommandExtension
 
 
 class TestCommand(CommandExtension):
-    """Run a launch test."""
+    """Run a ROS2 launch test."""
 
     def add_arguments(self, parser, cli_name):
         """Add arguments to argparse."""
