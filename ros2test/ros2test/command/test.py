@@ -27,6 +27,6 @@ class TestCommand(CommandExtension):
 
     def main(self, *, parser, args):
         """Entry point for CLI program."""
-        return launch_testing.launch_test.main(
+        return launch_testing.launch_test.run(
             parser, args, test_runner_cls=launch_testing_ros.LaunchTestRunner
         )
