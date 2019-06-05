@@ -22,8 +22,6 @@ from ros2cli.command import CommandExtension
 
 from ..api.domain_coordinator import get_coordinated_domain_id
 
-_logger_ = logging.getLogger(__name__)
-
 
 class TestCommand(CommandExtension):
     """Run a ROS2 launch test."""
@@ -34,19 +32,17 @@ class TestCommand(CommandExtension):
         parser.add_argument(
             '--disable-isolation', action='store_true', default=False,
             help='Disable automatic ROS_DOMAIN_ID isolation.'
+            'If ROS_DOMAIN_ID is already set, launch_test will respect and use it.'
+            'If it is not set, a random ROS_DOMAIN_ID that is not being used by another'
+            ' process will be picked. When passing this argument, the random '
+            'ROS_DOMAIN_ID picking is disabled.'
         )
 
     def main(self, *, parser, args):
         """Entry point for CLI program."""
-        # If ROS_DOMAIN_ID is already set, launch_test will respect that domain ID and use it.
-        # If ROS_DOMAIN_ID is not set, launch_test will pick a ROS_DOMAIN_ID that's not being used
-        # by another launch_test process.
-        # This is to allow launch_test to run in parallel and not have ROS cross-talk.
-        # If the user needs to debug a test and they don't have ROS_DOMAIN_ID set in their
-        # environment they can disable isolation by passing the --disable-isolation flag.
         if 'ROS_DOMAIN_ID' not in os.environ and not args.disable_isolation:
             domain_id = get_coordinated_domain_id()  # Must keep this as a local to keep it alive
-            _logger_.info('Running with ROS_DOMAIN_ID {}'.format(domain_id))
+            print('Running with ROS_DOMAIN_ID {}'.format(domain_id))
             os.environ['ROS_DOMAIN_ID'] = str(domain_id)
         if 'ROS_DOMAIN_ID' in os.environ:
             print('ROS_DOMAIN_ID', os.environ['ROS_DOMAIN_ID'])
