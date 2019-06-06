@@ -31,10 +31,9 @@ class TestCommand(CommandExtension):
         parser.add_argument(
             '--disable-isolation', action='store_true', default=False,
             help='Disable automatic ROS_DOMAIN_ID isolation.'
-            'If ROS_DOMAIN_ID is already set, launch_test will respect and use it.'
-            'If it is not set, a random ROS_DOMAIN_ID that is not being used by another'
-            ' process will be picked. When passing this argument, the random '
-            'ROS_DOMAIN_ID picking is disabled.'
+            'If ROS_DOMAIN_ID is already set, launch_test will respect and use it. If it is not'
+            ' set, a ROS_DOMAIN_ID not being used by another ros2 test will be picked. '
+            'When passing this argument, the random ROS_DOMAIN_ID picking is disabled.'
         )
 
     def main(self, *, parser, args):
