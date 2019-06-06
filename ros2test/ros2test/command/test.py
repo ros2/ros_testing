@@ -14,12 +14,12 @@
 
 import os
 
+from domain_coordinator import get_coordinated_domain_id
+
 import launch_testing.launch_test
 import launch_testing_ros
 
 from ros2cli.command import CommandExtension
-
-from ..api.domain_coordinator import get_coordinated_domain_id
 
 
 class TestCommand(CommandExtension):
