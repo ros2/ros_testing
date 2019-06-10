@@ -31,9 +31,9 @@ class TestCommand(CommandExtension):
         parser.add_argument(
             '--disable-isolation', action='store_true', default=False,
             help='Disable automatic ROS_DOMAIN_ID isolation.'
-            'If ROS_DOMAIN_ID is already set, launch_test will respect and use it. If it is not'
-            ' set, a ROS_DOMAIN_ID not being used by another ros2 test will be picked. '
-            'When passing this argument, the random ROS_DOMAIN_ID picking is disabled.'
+            'If ROS_DOMAIN_ID is already set, ros2 test will respect and use it. If it is not'
+            ' set, a ROS_DOMAIN_ID not being used by another ros2 test will be picked '
+            'unless isolation is disabled.'
         )
 
     def main(self, *, parser, args):
@@ -44,8 +44,6 @@ class TestCommand(CommandExtension):
             os.environ['ROS_DOMAIN_ID'] = str(domain_id)
         if 'ROS_DOMAIN_ID' in os.environ:
             print('ROS_DOMAIN_ID', os.environ['ROS_DOMAIN_ID'])
-        else:
-            print('No ROS_DOMAIN_ID')
         return launch_testing.launch_test.run(
             parser, args, test_runner_cls=launch_testing_ros.LaunchTestRunner
         )
