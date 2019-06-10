@@ -32,7 +32,7 @@ class TestCommand(CommandExtension):
             '--disable-isolation', action='store_true', default=False,
             help='Disable automatic ROS_DOMAIN_ID isolation.'
             'If ROS_DOMAIN_ID is already set, ros2 test will respect and use it. If it is not'
-            ' set, a ROS_DOMAIN_ID not being used by another ros2 test will be picked '
+            ' set, a ROS_DOMAIN_ID not being used by another ros2 test will be chosen '
             'unless isolation is disabled.'
         )
 
