@@ -73,7 +73,7 @@ function(add_ros_test filename)
   ament_add_test(
     "${_ros_test_TARGET}"
     COMMAND ${cmd}
-    OUTPUT_FILE "${CMAKE_BINARY_DIR}/ros_test/CHANGEME.txt"
+    OUTPUT_FILE "${CMAKE_BINARY_DIR}/ros_test/${_ros_test_TARGET}.txt"
     RESULT_FILE "${_ros_test_RESULT_FILE}"
     TIMEOUT "${_ros_test_TIMEOUT}"
     ${_ros_test_UNPARSED_ARGUMENTS}
