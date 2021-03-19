@@ -2,6 +2,11 @@
 Changelog for package ros2test
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Add pytest.ini so local tests don't display warning (`#8 <https://github.com/ros2/ros_testing/issues/8>`_)
+* Contributors: Chris Lalancette
+
 0.2.1 (2020-04-30)
 ------------------
 * More verbose test_flake8 error messages (same as `ros2/launch_ros#135 <https://github.com/ros2/launch_ros/issues/135>`_)
