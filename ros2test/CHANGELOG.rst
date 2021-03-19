@@ -2,8 +2,8 @@
 Changelog for package ros2test
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.3.0 (2021-03-19)
+------------------
 * Add pytest.ini so local tests don't display warning (`#8 <https://github.com/ros2/ros_testing/issues/8>`_)
 * Contributors: Chris Lalancette
 
