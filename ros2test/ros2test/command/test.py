@@ -12,10 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import os
 import contextlib
-import domain_coordinator
+import os
 
+import domain_coordinator
 import launch_testing.launch_test
 import launch_testing_ros
 
