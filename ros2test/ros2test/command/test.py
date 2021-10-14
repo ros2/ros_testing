@@ -12,10 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+import contextlib
 import os
 
-from domain_coordinator import get_coordinated_domain_id
-
+import domain_coordinator
 import launch_testing.launch_test
 import launch_testing_ros
 
@@ -38,12 +38,13 @@ class TestCommand(CommandExtension):
 
     def main(self, *, parser, args):
         """Entry point for CLI program."""
-        if 'ROS_DOMAIN_ID' not in os.environ and not args.disable_isolation:
-            domain_id = get_coordinated_domain_id()  # Must keep this as a local to keep it alive
-            print('Running with ROS_DOMAIN_ID {}'.format(domain_id))
-            os.environ['ROS_DOMAIN_ID'] = str(domain_id)
-        if 'ROS_DOMAIN_ID' in os.environ:
-            print('ROS_DOMAIN_ID', os.environ['ROS_DOMAIN_ID'])
-        return launch_testing.launch_test.run(
-            parser, args, test_runner_cls=launch_testing_ros.LaunchTestRunner
-        )
+        with contextlib.ExitStack() as stack:
+            if 'ROS_DOMAIN_ID' not in os.environ and not args.disable_isolation:
+                domain_id = stack.enter_context(domain_coordinator.domain_id())
+                print('Running with ROS_DOMAIN_ID {}'.format(domain_id))
+                os.environ['ROS_DOMAIN_ID'] = str(domain_id)
+            if 'ROS_DOMAIN_ID' in os.environ:
+                print('ROS_DOMAIN_ID', os.environ['ROS_DOMAIN_ID'])
+            return launch_testing.launch_test.run(
+                parser, args, test_runner_cls=launch_testing_ros.LaunchTestRunner
+            )
