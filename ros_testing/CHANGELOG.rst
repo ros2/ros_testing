@@ -2,6 +2,9 @@
 Changelog for package ros_testing
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.4.0 (2022-01-13)
+------------------
+
 0.3.0 (2021-03-19)
 ------------------
 * Use rostest CMake target as output file basename. (`#9 <https://github.com/ros2/ros_testing/issues/9>`_)

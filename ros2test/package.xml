@@ -4,7 +4,7 @@
   schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="2">
   <name>ros2test</name>
-  <version>0.3.0</version>
+  <version>0.4.0</version>
   <description>The test command for ROS 2 launch tests.</description>
   <maintainer email="michel@ekumenlabs.com">Michel Hidalgo</maintainer>
   <license>Apache License 2.0</license>

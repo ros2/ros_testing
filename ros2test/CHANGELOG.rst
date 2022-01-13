@@ -2,6 +2,11 @@
 Changelog for package ros2test
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.4.0 (2022-01-13)
+------------------
+* Use new domain_coordinator API (`#10 <https://github.com/ros2/ros_testing/issues/10>`_)
+* Contributors: Timo Röhling
+
 0.3.0 (2021-03-19)
 ------------------
 * Add pytest.ini so local tests don't display warning (`#8 <https://github.com/ros2/ros_testing/issues/8>`_)
