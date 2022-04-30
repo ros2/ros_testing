@@ -2,6 +2,9 @@
 Changelog for package ros2test
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.5.0 (2022-04-29)
+------------------
+
 0.4.0 (2022-01-13)
 ------------------
 * Use new domain_coordinator API (`#10 <https://github.com/ros2/ros_testing/issues/10>`_)
