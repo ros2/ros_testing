@@ -2,6 +2,11 @@
 Changelog for package ros_testing
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* update maintainer
+* Contributors: Dharini Dutia, quarkytale
+
 0.5.0 (2022-04-29)
 ------------------
 
