@@ -2,8 +2,8 @@
 Changelog for package ros2test
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.5.1 (2022-09-13)
+------------------
 * update maintainer
 * Contributors: Dharini Dutia, quarkytale
 
