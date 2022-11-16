@@ -4,7 +4,9 @@
   <name>ros_testing</name>
   <version>0.5.1</version>
   <description>The entry point package to launch testing in ROS.</description>
+
   <maintainer email="dharini@openrobotics.org">Dharini Dutia</maintainer>
+
   <license>Apache License 2.0</license>
 
   <author email="michel@ekumenlabs.com">Michel Hidalgo</author>

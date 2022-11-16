@@ -6,7 +6,9 @@
   <name>ros2test</name>
   <version>0.5.1</version>
   <description>The test command for ROS 2 launch tests.</description>
+
   <maintainer email="dharini@openrobotics.org">Dharini Dutia</maintainer>
+
   <license>Apache License 2.0</license>
 
   <author email="michel@ekumenlabs.com">Michel Hidalgo</author>
