@@ -2,8 +2,8 @@
 Changelog for package ros2test
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.5.2 (2023-02-13)
+------------------
 * [rolling] Update maintainers - 2022-11-07 (`#12 <https://github.com/ros2/ros_testing/issues/12>`_)
 * Contributors: Audrow Nash
 

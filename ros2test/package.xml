@@ -4,7 +4,7 @@
   schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="2">
   <name>ros2test</name>
-  <version>0.5.1</version>
+  <version>0.5.2</version>
   <description>The test command for ROS 2 launch tests.</description>
 
   <maintainer email="dharini@openrobotics.org">Dharini Dutia</maintainer>
