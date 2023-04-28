@@ -2,6 +2,9 @@
 Changelog for package ros_testing
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.6.0 (2023-04-28)
+------------------
+
 0.5.2 (2023-02-13)
 ------------------
 * [rolling] Update maintainers - 2022-11-07 (`#12 <https://github.com/ros2/ros_testing/issues/12>`_)
