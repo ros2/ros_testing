@@ -2,7 +2,7 @@
 <?xml-model href="http://download.ros.org/schema/package_format2.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="2">
   <name>ros_testing</name>
-  <version>0.6.0</version>
+  <version>0.7.0</version>
   <description>The entry point package to launch testing in ROS.</description>
 
   <maintainer email="dharini@openrobotics.org">Dharini Dutia</maintainer>
