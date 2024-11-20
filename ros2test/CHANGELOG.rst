@@ -2,6 +2,11 @@
 Changelog for package ros2test
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Add in test_xmllint to ros2test. (`#13 <https://github.com/ros2/ros_testing/issues/13>`_)
+* Contributors: Chris Lalancette
+
 0.7.0 (2024-04-26)
 ------------------
 
