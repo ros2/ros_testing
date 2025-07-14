@@ -24,14 +24,17 @@ setup(
     classifiers=[
         'Environment :: Console',
         'Intended Audience :: Developers',
-        'License :: OSI Approved :: Apache Software License',
         'Programming Language :: Python',
     ],
     description='The test command for ROS 2 launch tests.',
     long_description="""\
 This package provides the test command for ROS 2 launch tests.""",
     license='Apache License, Version 2.0',
-    tests_require=['pytest'],
+    extras_require={
+        'test': [
+            'pytest',
+        ],
+    },
     entry_points={
         'ros2cli.command': [
             'test = ros2test.command.test:TestCommand',
