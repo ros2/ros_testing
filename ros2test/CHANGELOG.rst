@@ -2,8 +2,8 @@
 Changelog for package ros2test
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.9.1 (2025-07-29)
+------------------
 * fix setuptools deprecations (`#16 <https://github.com/ros2/ros_testing/issues/16>`_)
 * Contributors: mosfet80
 
