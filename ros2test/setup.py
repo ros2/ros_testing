@@ -29,7 +29,7 @@ setup(
     description='The test command for ROS 2 launch tests.',
     long_description="""\
 This package provides the test command for ROS 2 launch tests.""",
-    license='Apache License, Version 2.0',
+    license='Apache-2.0',
     extras_require={
         'test': [
             'pytest',
